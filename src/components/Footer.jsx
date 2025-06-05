@@ -21,9 +21,10 @@ function Footer(props) {
                     </Button>
 
                 </div>
-                <section className='border border-slate-100'>
-                <div className=' flex flex-row justify-between'>
-                    <div>Radiant</div>
+                <section className='border border-slate-100 justify-center items-center flex flex-col'>
+                <div className=' flex lg:flex-row  flex-col  max-w-[1240px] w-full'>
+                    <div className='flex-1'>Radiant</div>
+                    <div className='flex flex-row justify-between'>
                     <div className='flex flex-col'>
                         <div>Product</div>
                         <div>Pricing</div>
@@ -36,6 +37,8 @@ function Footer(props) {
                         <div>Analysis</div>
                         <div>API</div>
                     </div>
+                    </div>
+                    <div className='flex flex-row justify-between'>
                     <div className='flex flex-col'>
                         <div>Product</div>
                         <div>Pricing</div>
@@ -47,6 +50,7 @@ function Footer(props) {
                         <div>Pricing</div>
                         <div>Analysis</div>
                         <div>API</div>
+                    </div>
                     </div>
 
                 </div>

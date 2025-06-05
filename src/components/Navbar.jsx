@@ -16,7 +16,7 @@ function Navbar() {
 
     return (
         <>
-        <nav className=' h-24 flex flex-row justify-center items-center w-full'>
+        <nav className=' h-24 flex flex-row justify-center top-0 absolute z-50 items-center w-full'>
             <div className='flex flex-row items-center justify-between max-w-[1240px] w-full'>
             
         <div>

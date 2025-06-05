@@ -13,11 +13,11 @@ function page(props) {
           <Text className="!text-2xl max-w-lg">
             Radiant helps you sell more by revealing sensitive information about your customers.
           </Text>
-          <div className='pt-8'>
-            <Button className="!bg-gray-1000 !text-slate-100 !rounded-3xl !p-4 !pt-5 !pb-5">
+          <div className='pt-8 w-full '>
+            <Button className="!bg-gray-1000 !text-slate-100 !rounded-3xl !p-4 !pt-5 !pb-5 w-full lg:w-28">
               Get Started
             </Button>
-            <Button className="!bg-gray-1000 !text-slate-100 !rounded-3xl !p-4 !pt-5 !pb-5">
+            <Button className="!bg-gray-1000 !text-slate-100 !rounded-3xl !p-4 !pt-5 !pb-5 w-full lg:w-28">
               See pricing 
             </Button>
           </div>
@@ -25,7 +25,7 @@ function page(props) {
       </div>
 
 
-      <section className='flex flex-row p-8 lg:text-5xl text-3xl justify-between flex-wrap'>
+      <section className='flex flex-row p-8 lg:text-5xl text-4xl justify-between flex-wrap'>
         <div>logo</div>
         <div>logo</div>
         <div>logo</div>
@@ -47,30 +47,35 @@ function page(props) {
         <div className='grid lg:grid-cols-6 grid-rows-2 gap-4 mt-10 '>
             <div className='bg-gray-100 col-span-3 rounded-3xl h-[400px]'>1</div>
             <div className='bg-gray-100 col-span-3 rounded-3xl'>2</div>
-            <div className='bg-gray-100  col-span-2 rounded-3xl h-[400px]'>3</div>
-            <div className='bg-gray-100 col-span-2 rounded-3xl h-[400px]'>4</div>
-            <div className='bg-gray-100  col-span-2 rounded-3xl h-[400px]'>5</div>
+            <div className='bg-gray-100  lg:col-span-2 col-span-3 rounded-3xl h-[400px]'>3</div>
+            <div className='bg-gray-100 lg:col-span-2 col-span-3 rounded-3xl h-[400px]'>4</div>
+            <div className='bg-gray-100  lg:col-span-2 col-span-3 rounded-3xl h-[400px]'>5</div>
         </div>
       </section>
 
 
-      <section className='h-full w-full bg-slate-900 rounded-3xl p-8'>
+      <section className='h-full w-full bg-slate-900 rounded-3xl p-8 flex flex-row justify-center'>
+        <div className='max-w-[1240px] h-full w-full '>
+
+       
         <Text className="!text-sm ">Outreach</Text>
         <p className="text-5xl font-semibold text-slate-100 max-w-2xl">Customer outreach has never been easier.</p>
         <div className='grid lg:grid-cols-6 grid-rows-2 gap-4'>
           <div className='bg-gray-100 col-span-4 rounded-3xl h-[300px]'>1</div>
-          <div className='bg-gray-100 col-span-2 rounded-3xl h-[300px]'>2</div>
-          <div className='bg-gray-100 col-span-2 rounded-3xl h-[300px]'>3</div>
+          <div className='bg-gray-100 lg:col-span-2 col-span-4 rounded-3xl h-[300px]'>2</div>
+          <div className='bg-gray-100 lg:col-span-2 col-span-4 rounded-3xl h-[300px]'>3</div>
           <div className='bg-gray-100 col-span-4 rounded-3xl h-[300px]'>4</div>
 
         </div>
-
+       </div>
       </section>
 
-      <section className='h-full w-full p-8'>
+      <section className='h-full w-full p-8 flex flex-col items-center justify-center '>
+        <div className='max-w-[1240px] h-full w-full '>
         <Text className="!text-sm ">What everyone is saying</Text>
         <p className="text-5xl font-semibold max-w-2xl">Trusted by professionals.</p>
-        <div className='flex flex-row space-x-12 overlow-x-scroll w-full'>
+        </div>
+        {/* <div className='flex flex-row space-x-12 overlow-x-scroll max-w-[1240px]'>
             <div className='h-[400px] w-[300px] bg-gray-100 rounded-3xl'>1</div>
             <div className='h-[400px] w-[300px] bg-gray-100 rounded-3xl'>1</div>
             <div className='h-[400px] w-[300px] bg-gray-100 rounded-3xl'>1</div>
@@ -78,9 +83,11 @@ function page(props) {
             <div className='h-[400px] w-[300px] bg-gray-100 rounded-3xl'>1</div>
             <div className='h-[400px] w-[300px] bg-gray-100 rounded-3xl'>1</div>
 
-        </div>
+        </div> */}
+        <div className='flex flex-col max-w-[1240px] items-start h-full w-full'>
         <Text className="!text-sm max-w-sm">Join the best sellers in the business and start using Radiant to hit your targets today.</Text>
         <Button>Get started</Button>
+        </div>
       </section>
     </div>
   );
