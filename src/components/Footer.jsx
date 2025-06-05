@@ -10,9 +10,9 @@ function Footer(props) {
                 <div className='flex flex-col items-center justify-center mb-16 space-y-8'>
                     <Text className="!text-sm ">Get started</Text>
                     <div className='flex flex-col items-center'>
-                        <p className="text-5xl font-semibold text-slate-1000">Ready to dive in?
+                        <p className="text-5xl font-bold text-slate-1000">Ready to dive in?
                         </p>
-                        <p className="text-5xl font-semibold text-slate-1000">Start your free trial today.
+                        <p className="text-5xl font-bold text-slate-1000">Start your free trial today.
                         </p>
                     </div>
                     <div className='flex flex-col items-center '>
@@ -24,37 +24,39 @@ function Footer(props) {
                     </Button>
 
                 </div>
-                <section className='border border-slate-100 justify-center items-center flex flex-col h-72'>
-                    <div className=' flex justify-between flex-row flex-wrap  max-w-[1240px] w-full'>
-                        <div className='flex-1'>Radiant</div>
-                        {/* <div className='flex flex-row justify-between'> */}
-                        <div className='flex flex-col'>
-                            <div>Product</div>
-                            <div>Pricing</div>
-                            <div>Analysis</div>
-                            <div>API</div>
+                <section className='border border-slate-100 justify-center items-center flex flex-col h-72 pl-16 pr-16'>
+                    <div className=' flex justify-between items-start lg:items-center lg:flex-row flex-col flex-wrap  max-w-[1240px] w-full'>
+                        <div className='flex'>Radiant</div>
+                        <div className='flex lg:flex-row flex-col m lg:space-x-32' >
+                            <div className='flex flex-row space-x-32  '>
+                                <div className='flex flex-col space-y-6'>
+                                    <div>Product</div>
+                                    <div>Pricing</div>
+                                    <div>Analysis</div>
+                                    <div>API</div>
+                                </div>
+                                <div className='flex flex-col space-y-6'>
+                                    <div>Product</div>
+                                    <div>Pricing</div>
+                                    <div>Analysis</div>
+                                    <div>API</div>
+                                </div>
+                            </div>
+                            <div className='flex flex-row space-x-32'>
+                                <div className='flex flex-col space-y-6'>
+                                    <div>Product</div>
+                                    <div>Pricing</div>
+                                    <div>Analysis</div>
+                                    <div>API</div>
+                                </div>
+                                <div className='flex flex-col space-y-6'>
+                                    <div>Product</div>
+                                    <div>Pricing</div>
+                                    <div>Analysis</div>
+                                    <div>API</div>
+                                </div>
+                            </div>
                         </div>
-                        <div className='flex flex-col'>
-                            <div>Product</div>
-                            <div>Pricing</div>
-                            <div>Analysis</div>
-                            <div>API</div>
-                        </div>
-                        {/* </div> */}
-                        {/* <div className='flex flex-row justify-between'> */}
-                        <div className='flex flex-col'>
-                            <div>Product</div>
-                            <div>Pricing</div>
-                            <div>Analysis</div>
-                            <div>API</div>
-                        </div>
-                        <div className='flex flex-col'>
-                            <div>Product</div>
-                            <div>Pricing</div>
-                            <div>Analysis</div>
-                            <div>API</div>
-                        </div>
-                        {/* </div> */}
 
                     </div>
                     <div className=' flex flex-row justify-between'>

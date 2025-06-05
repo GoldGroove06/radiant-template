@@ -13,35 +13,41 @@ const CloseIcon = () => {
 };
 function Navbar() {
     
-
+    const [isOpen, setIsOpen] = useState(false);
 
 
     return (
         <>
-        <nav className=' h-24 flex flex-row justify-center top-16 absolute z-50 items-center w-full'>
-            <div className='flex lg:flex-row flex-col items-center justify-between max-w-[1240px] w-full pl-8 pr-8'>
+        <nav className=' h-24 flex flex-row justify-center top-16 absolute z-50 lg:items-center items-start w-full'>
+            <div className='flex lg:flex-row flex-col lg:items-center justify-between max-w-[1240px] w-full pl-8 pr-8'>
             
         <div className='text-3xl font-bold'>
             Radiant
         </div>
-            <div className={` flex lg:flex-row flex-col space-x-6  text-slate-1000 bg-tranparent  `}>
-                <Link href="/about" className={`hover:text-teal-900 pb-3 `}>Pricing</Link>
-                <Link href="/articles" className={`hover:text-teal-900 pb-3 `}>Company</Link>
-                <Link href="/projects" className={`hover:text-teal-900 pb-3 `}>Blog</Link>
-                <Link href="/speaking" className={`hover:text-teal-900 pb-3 `}>Login</Link>
+        
+            <div className={` flex hidden lg:block lg:flex-row flex-col space-x-6  text-slate-1000 bg-tranparent  `}>
+                <Link href="/pricing" className={`hover:text-teal-900 pb-3 `}>Pricing</Link>
+                <Link href="/company" className={`hover:text-teal-900 pb-3 `}>Company</Link>
+                <Link href="/blog" className={`hover:text-teal-900 pb-3 `}>Blog</Link>
+                <Link href="/login" className={` pb-3 `}>Login</Link>
             </div>
-            {/* <div className='w-full'>
+            <button className={`lg:hidden`}
+            onClick={() => setIsOpen(!isOpen)}
+            >
+                open
+            </button>
+        
+            <div className={`lg:hidden ${isOpen ? "block" : "hidden"} z-0`}>
                 
-                            <div className={`flex flex-col space-y-6  text-slate-1000 bg-tranparent  `}>
-                                <Link href="/about" className={`hover:text-teal-900 pb-3 `}>About</Link>
-                                <Link href="/articles" className={`hover:text-teal-900 pb-3 `}>Articles</Link>
-                                <Link href="/projects" className={`hover:text-teal-900 pb-3 `}>Projects</Link>
-                                <Link href="/speaking" className={`hover:text-teal-900 pb-3 `}>Speaking</Link>
-                                <Link href="/uses" className={`hover:text-teal-900 pb-3 `}>Uses</Link>
+                            <div className={`flex flex-col space-y-1  text-slate-1000 bg-tranparent  `}>
+                                <Link href="/pricing" className={`hover:text-teal-900 pb-3 `}>Pricing</Link>
+                <Link href="/company" className={`hover:text-teal-900 pb-3 `}>Company</Link>
+                <Link href="/blog" className={`hover:text-teal-900 pb-3 `}>Blog</Link>
+                <Link href="/login" className={` pb-3 `}>Login</Link>
                             </div>
                        
                 
-            </div> */}
+            </div>
 
 
             
