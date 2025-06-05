@@ -16,9 +16,12 @@ function Navbar() {
 
     return (
         <>
-        <nav className={` h-24 flex flex-row pl-6 pr-4 justify-between lg:items-center w-full`}>
+        <nav className=' h-24 flex flex-row justify-center items-center w-full'>
+            <div className='flex flex-row items-center justify-between max-w-[1240px] w-full'>
             
-
+        <div>
+            Radiant
+        </div>
             <div className={`hidden lg:block flex flex-row space-x-6  text-slate-1000 bg-tranparent  `}>
                 <Link href="/about" className={`hover:text-teal-900 pb-3 `}>About</Link>
                 <Link href="/articles" className={`hover:text-teal-900 pb-3 `}>Articles</Link>
@@ -30,7 +33,7 @@ function Navbar() {
 
             
            
-     
+     </div>
            
         </nav>
 </>
