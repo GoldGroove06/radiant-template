@@ -11,9 +11,9 @@ const Radui = () => (
 function page(props) {
   return (
     <div>
-      <div className='w-full bg-gradient-to-r from-yellow-300 from-28% via-pink-700 via-70% to-purple-800 sm:bg-gradient-to-r rounded-3xl flex flex-row justify-center items-start space-y-4 pl-8'>
+      <div className='w-full bg-gradient-to-r from-yellow-300 from-28% via-pink-700 via-70% to-purple-800 sm:bg-gradient-to-r rounded-3xl flex flex-row justify-center lg:items-start items-center space-y-4 pl-8'>
         <div className='max-w-[1240px] flex flex-col items-start justify-center pt-64 pb-48 space-y-8  w-full'>
-          <p className="text-9xl font-semibold">Close every deal.</p>
+          <p className="lg:text-9xl text-6xl font-semibold">Close every deal.</p>
           <Text className="!text-2xl max-w-lg">
             Radiant helps you sell more by revealing sensitive information about your customers.
           </Text>
@@ -32,7 +32,7 @@ function page(props) {
       </div>
 
 
-      <section className='flex flex-row p-8 lg:text-5xl text-4xl justify-between flex-wrap max-w-[1240px] mx-auto'>
+      <section className='flex flex-row p-8 lg:text-5xl space-x-4 text-4xl justify-between flex-wrap max-w-[1240px] mx-auto'>
         <Radui/>
         <Radui/>
         <Radui/>
@@ -41,11 +41,11 @@ function page(props) {
       </section>
 
 
-      <section className='max-w-[1240px] mx-auto mt-16 p-6'>
-        <p className='text-6xl font-semibold max-w-3xl'>A snapshot of your entire sales pipeline.</p>
-        <div className='p-2 bg-slate-100 border border-gray-300 rounded-2xl mt-12'>
+      <section className='lg:max-w-[1240px] lg:mx-auto flex flex-col mt-16 p-6'>
+        <p className='lg:text-6xl text-4xl font-semibold max-w-3xl'>A snapshot of your entire sales pipeline.</p>
+        {/* <div className='p-2 bg-slate-100 border border-gray-300 rounded-2xl mt-12'> */}
         <Image src="/images/app.png" alt="" height={500} width={1240} className='rounded-2xl border border-gray-400'/>
-        </div>
+        {/* </div> */}
       </section>
 
       <section className='max-w-7xl mx-auto mt-32 p-6'>
