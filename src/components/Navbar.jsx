@@ -3,6 +3,8 @@ import React, { useState, useEffect } from 'react';
 import Button from '@radui/ui/Button';
 import Link from 'next/link';
 import Seperator from '@radui/ui/Separator';
+import Accordion from "@radui/ui/Accordion";
+
 
 
 
@@ -16,19 +18,30 @@ function Navbar() {
 
     return (
         <>
-        <nav className=' h-24 flex flex-row justify-center top-0 absolute z-50 items-center w-full'>
-            <div className='flex flex-row items-center justify-between max-w-[1240px] w-full'>
+        <nav className=' h-24 flex flex-row justify-center top-16 absolute z-50 items-center w-full'>
+            <div className='flex lg:flex-row flex-col items-center justify-between max-w-[1240px] w-full pl-8 pr-8'>
             
-        <div>
+        <div className='text-3xl font-bold'>
             Radiant
         </div>
-            <div className={`hidden lg:block flex flex-row space-x-6  text-slate-1000 bg-tranparent  `}>
-                <Link href="/about" className={`hover:text-teal-900 pb-3 `}>About</Link>
-                <Link href="/articles" className={`hover:text-teal-900 pb-3 `}>Articles</Link>
-                <Link href="/projects" className={`hover:text-teal-900 pb-3 `}>Projects</Link>
-                <Link href="/speaking" className={`hover:text-teal-900 pb-3 `}>Speaking</Link>
-                <Link href="/uses" className={`hover:text-teal-900 pb-3 `}>Uses</Link>
+            <div className={` flex lg:flex-row flex-col space-x-6  text-slate-1000 bg-tranparent  `}>
+                <Link href="/about" className={`hover:text-teal-900 pb-3 `}>Pricing</Link>
+                <Link href="/articles" className={`hover:text-teal-900 pb-3 `}>Company</Link>
+                <Link href="/projects" className={`hover:text-teal-900 pb-3 `}>Blog</Link>
+                <Link href="/speaking" className={`hover:text-teal-900 pb-3 `}>Login</Link>
             </div>
+            {/* <div className='w-full'>
+                
+                            <div className={`flex flex-col space-y-6  text-slate-1000 bg-tranparent  `}>
+                                <Link href="/about" className={`hover:text-teal-900 pb-3 `}>About</Link>
+                                <Link href="/articles" className={`hover:text-teal-900 pb-3 `}>Articles</Link>
+                                <Link href="/projects" className={`hover:text-teal-900 pb-3 `}>Projects</Link>
+                                <Link href="/speaking" className={`hover:text-teal-900 pb-3 `}>Speaking</Link>
+                                <Link href="/uses" className={`hover:text-teal-900 pb-3 `}>Uses</Link>
+                            </div>
+                       
+                
+            </div> */}
 
 
             
