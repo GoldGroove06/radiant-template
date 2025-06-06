@@ -4,6 +4,8 @@ import Button from '@radui/ui/Button';
 import Link from 'next/link';
 import Seperator from '@radui/ui/Separator';
 import Accordion from "@radui/ui/Accordion";
+import { usePathname } from 'next/navigation'
+
 
 
 
@@ -14,12 +16,13 @@ const CloseIcon = () => {
 function Navbar() {
     
     const [isOpen, setIsOpen] = useState(false);
-
+    const pathname = usePathname()
+    if (pathname === "/login" || pathname === "/") return null
 
     return (
         <>
-        <nav className={``}>
-            <div className=''>
+        <nav className=' flex flex-row justify-center  lg:items-center items-start w-full '>
+            <div className='flex lg:flex-row flex-col lg:items-center justify-between max-w-[1240px] w-full pl-8 pr-8   '>
           <div className='flex flex-row justify-between max-w-[1240px] w-full lg:items-center'>  
         <div className='text-3xl font-bold'>
             Radiant
@@ -39,7 +42,7 @@ function Navbar() {
             </button>
             </div>
         </div>
-            <div className={`lg:hidden ${isOpen ? "block" : "hidden"} z-0 mb-24`}>
+            <div className={`lg:hidden ${isOpen ? "block" : "hidden"} z-0 mb-8`}>
                 
                             <div className={`flex flex-col space-y-1  text-slate-1000 bg-tranparent  `}>
                                 <Link href="/pricing" className={`hover:text-teal-900 pb-3 `}>Pricing</Link>

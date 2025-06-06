@@ -26,7 +26,7 @@ function Footer(props) {
                 </div>
                 <section className='border border-slate-100 justify-center items-center flex flex-col lg:h-72 pl-16 pr-16'>
                     <div className=' flex justify-between items-start lg:items-center lg:flex-row flex-col flex-wrap  max-w-[1240px] w-full space-y-8 lg:space-y-0'>
-                        <div className=''>Radiant</div>
+                        <div className='h-full'>Radiant</div>
 
                         <div className='grid grid-cols-4 lg:grid-rows-1 grid-rows-2 w-full lg:max-w-[700px]'>
                             <div className='flex flex-col space-y-6 lg:col-span-1 col-span-2'>
@@ -59,10 +59,10 @@ function Footer(props) {
 
                     </div>
                     {/* <div className='border border-slate-100 w-full'> */}
-                        <div className=' flex justify-between items-start lg:items-center flex-row flex-wrap  max-w-[1240px] w-full '>
+                        <div className=' flex justify-between items-start lg:items-center flex-row flex-wrap  max-w-[1240px] w-full pt-8 pb-8 mt-8'>
                             {/* <div className='w-full w-max-[1240px] flex flex-row justify-between '> */}
                             <div> 2025 Radiant</div>
-                            <div className='flex flex-row'>
+                            <div className='flex flex-row h-full w-[100px] justify-between'>
                                 <div>f</div>
                                 <div>f</div>
                                 <div>f</div>
