@@ -59,7 +59,7 @@ function Footer(props) {
 
                     </div>
                     {/* <div className='border border-slate-100 w-full'> */}
-                        <div className=' flex justify-between items-start lg:items-center flex-row flex-wrap  max-w-[1240px] w-full pt-8 pb-8 mt-8'>
+                        <div className=' flex justify-between items-center flex-row flex-wrap  max-w-[1240px] w-full pt-8 pb-8 mt-8'>
                             {/* <div className='w-full w-max-[1240px] flex flex-row justify-between '> */}
                             <div> 2025 Radiant</div>
                             <div className='flex flex-row h-full w-[100px] justify-between'>

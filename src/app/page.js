@@ -89,8 +89,8 @@ function page(props) {
 
       <section className='lg:max-w-[1240px] lg:mx-auto flex flex-col mt-16 p-6 overflow-hidden'>
         <p className='lg:text-6xl text-4xl font-semibold max-w-3xl'>A snapshot of your entire sales pipeline.</p>
-        <div className='p-2 bg-slate-100 border border-gray-300 rounded-2xl mt-12 lg:w-full w-[200%] '>
-          <Image src="/images/app.png" alt="" height={500} width={1240} className='rounded-2xl border border-gray-400' />
+        <div className='p-2 bg-slate-100 border border-gray-300 rounded-2xl mt-12 lg:w-full w-[200%] backdrop-blur-sm shadow-lg'>
+          <Image src="/images/app.png" alt="" height={500} width={1240} className='rounded-2xl border border-gray-400 ' />
         </div>
       </section>
 

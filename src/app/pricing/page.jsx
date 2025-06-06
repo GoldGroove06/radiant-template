@@ -86,7 +86,7 @@ const Radui = () => (
 function page(props) {
     return (
         <div>
-            <section className='flex pt-48 items-start justify-center flex-col p-8  space-x-4  flex-wrap max-w-[1240px] mx-auto'>
+            <section className='flex pt-24 items-start justify-center flex-col p-8  space-x-4  flex-wrap max-w-[1240px] mx-auto'>
                 <h2 className='font-semibold text-5xl'>Pricing that grows with your team size.</h2>
                 <p className='text-gray-600 text-2xl max-w-3xl'>Companies all over the world have closed millions of deals with Radiant. Sign up today and start selling smarter.</p>
             </section>
