@@ -27,36 +27,35 @@ function Footer(props) {
                 <section className='border border-slate-100 justify-center items-center flex flex-col h-72 pl-16 pr-16'>
                     <div className=' flex justify-between items-start lg:items-center lg:flex-row flex-col flex-wrap  max-w-[1240px] w-full'>
                         <div className='flex'>Radiant</div>
-                        <div className='flex lg:flex-row flex-col m lg:space-x-32' >
-                            <div className='flex flex-row space-x-32  '>
-                                <div className='flex flex-col space-y-6'>
+                        
+                           <div className='grid grid-cols-4 gap-x-8 gap-y-12'>
+                                <div className='flex flex-col space-y-6 lg:col-span-1 col-span-2'>
                                     <div>Product</div>
                                     <div>Pricing</div>
                                     <div>Analysis</div>
                                     <div>API</div>
                                 </div>
-                                <div className='flex flex-col space-y-6'>
+                                <div className='flex flex-col space-y-6 lg:col-span-1 col-span-2'>
+                                    <div>Product</div>
+                                    <div>Pricing</div>
+                                    <div>Analysis</div>
+                                    <div>API</div>
+                                </div>
+                          
+                                <div className='flex flex-col space-y-6 lg:col-span-1 col-span-2'>
+                                    <div>Product</div>
+                                    <div>Pricing</div>
+                                    <div>Analysis</div>
+                                    <div>API</div>
+                                </div>
+                                <div className='flex flex-col space-y-6 lg:col-span-1 col-span-2'>
                                     <div>Product</div>
                                     <div>Pricing</div>
                                     <div>Analysis</div>
                                     <div>API</div>
                                 </div>
                             </div>
-                            <div className='flex flex-row space-x-32'>
-                                <div className='flex flex-col space-y-6'>
-                                    <div>Product</div>
-                                    <div>Pricing</div>
-                                    <div>Analysis</div>
-                                    <div>API</div>
-                                </div>
-                                <div className='flex flex-col space-y-6'>
-                                    <div>Product</div>
-                                    <div>Pricing</div>
-                                    <div>Analysis</div>
-                                    <div>API</div>
-                                </div>
-                            </div>
-                        </div>
+                        
 
                     </div>
                     <div className=' flex flex-row justify-between'>
@@ -68,6 +67,7 @@ function Footer(props) {
                         </div>
 
                     </div>
+
                 </section>
             </div>
 
