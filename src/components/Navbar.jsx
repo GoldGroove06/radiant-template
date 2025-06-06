@@ -18,9 +18,9 @@ function Navbar() {
 
     return (
         <>
-        <nav className=' h-24 flex flex-row justify-center top-16 absolute z-50 lg:items-center items-start w-full'>
-            <div className='flex lg:flex-row flex-col lg:items-center justify-between max-w-[1240px] w-full pl-8 pr-8'>
-            
+        <nav className={``}>
+            <div className=''>
+          <div className='flex flex-row justify-between max-w-[1240px] w-full lg:items-center'>  
         <div className='text-3xl font-bold'>
             Radiant
         </div>
@@ -31,13 +31,15 @@ function Navbar() {
                 <Link href="/blog" className={`hover:text-teal-900 pb-3 `}>Blog</Link>
                 <Link href="/login" className={` pb-3 `}>Login</Link>
             </div>
-            <button className={`lg:hidden`}
+            <div className='lg:hidden block'>
+            <button className={``}
             onClick={() => setIsOpen(!isOpen)}
             >
                 open
             </button>
-        
-            <div className={`lg:hidden ${isOpen ? "block" : "hidden"} z-0`}>
+            </div>
+        </div>
+            <div className={`lg:hidden ${isOpen ? "block" : "hidden"} z-0 mb-24`}>
                 
                             <div className={`flex flex-col space-y-1  text-slate-1000 bg-tranparent  `}>
                                 <Link href="/pricing" className={`hover:text-teal-900 pb-3 `}>Pricing</Link>

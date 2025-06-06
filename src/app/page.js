@@ -13,7 +13,7 @@ const Radui = () => (
 function page(props) {
   return (
     <div>
-      <div className='w-full bg-gradient-to-r from-yellow-300 from-28% via-pink-700 via-70% to-purple-800 sm:bg-gradient-to-r rounded-3xl flex flex-row justify-center lg:items-start items-center space-y-4 pl-8'>
+      <div className='w-full bg-gradient-to-r from-yellow-300 from-28% via-pink-700 via-70% to-purple-800 sm:bg-gradient-to-r rounded-3xl flex flex-row justify-center lg:items-start items-center space-y-4 lg:pl-8 p-4 lg:p-0'>
         <div className='max-w-[1240px] flex flex-col items-start justify-center pt-64 pb-48 space-y-8  w-full'>
           <p className="lg:text-9xl text-6xl font-semibold">Close every deal.</p>
           <Text className="!text-2xl max-w-lg">
@@ -23,7 +23,7 @@ function page(props) {
             <Button className="!bg-gray-1000 !text-slate-100 !rounded-3xl !p-4 !pt-5 !pb-5 w-full md:w-28">
               Get Started
             </Button>
-            <Button className="!bg-white/20 backdrop-blur-md border border-white/50 shadow-lgbg-slate-800 opacity-90 !text-gray-1000 !rounded-3xl !p-4 !pt-5 !pb-5 w-full md:w-28">
+            <Button className="!bg-white/20 backdrop-blur-md border border-white/50 shadow-lgbg-slate-800 opacity-90 !text-gray-1000 !rounded-3xl !p-4 !pt-5 !pb-5 w-full md:w-32">
               See pricing 
             </Button>
             {/* <Button customRootClass="landing-button" className="bg-white/20 backdrop-blur-md border border-white/50 shadow-lgbg-slate-800 opacity-90 text-gray-1000 rounded-3xl p-4 !pt-5 pb-5 w-full lg:w-28">
@@ -43,9 +43,9 @@ function page(props) {
       </section>
 
 
-      <section className='lg:max-w-[1240px] lg:mx-auto flex flex-col mt-16 p-6'>
+      <section className='lg:max-w-[1240px] lg:mx-auto flex flex-col mt-16 p-6 overflow-hidden'>
         <p className='lg:text-6xl text-4xl font-semibold max-w-3xl'>A snapshot of your entire sales pipeline.</p>
-        <div className='p-2 bg-slate-100 border border-gray-300 rounded-2xl mt-12'>
+        <div className='p-2 bg-slate-100 border border-gray-300 rounded-2xl mt-12 lg:w-full w-[200%] '>
         <Image src="/images/app.png" alt="" height={500} width={1240} className='rounded-2xl border border-gray-400'/>
         </div>
       </section>
@@ -86,14 +86,14 @@ function page(props) {
         <Text className="!text-sm ">What everyone is saying</Text>
         <p className="text-6xl font-semibold max-w-2xl">Trusted by professionals.</p>
         </div>
-        <div className='flex flex-row items-center justify-center w-full'>
-        <div className='flex flex-row space-x-12 p-8 snap-x overflow-x-scroll w-[98vw] max-w-[2100px]'>
-            <div className='h-[400px] min-w-[400px] snap-center bg-gray-100 rounded-3xl'>1</div>
-            <div className='h-[400px] min-w-[400px] snap-center bg-gray-100 rounded-3xl'>1</div>
-            <div className='h-[400px] min-w-[400px] snap-center bg-gray-100 rounded-3xl'>1</div>
-            <div className='h-[400px] min-w-[400px] snap-center bg-gray-100 rounded-3xl'>1</div>
-            <div className='h-[400px] min-w-[400px] snap-center bg-gray-100 rounded-3xl'>1</div>
-            <div className='h-[400px] min-w-[400px] snap-center bg-gray-100 rounded-3xl'>1</div>
+        <div className='flex flex-row items-start justify-start   snap-x w-full overflow-x-scroll'>
+        <div className='flex flex-row space-x-12 p-8 min-w-[200%] snap-center'>
+            <div className='h-[400px] min-w-72 snap-center bg-gray-100 rounded-3xl'>1</div>
+            <div className='h-[400px] min-w-72 snap-center bg-gray-100 rounded-3xl'>1</div>
+            <div className='h-[400px] min-w-72 snap-center bg-gray-100 rounded-3xl'>1</div>
+            <div className='h-[400px] min-w-72 snap-center bg-gray-100 rounded-3xl'>1</div>
+            <div className='h-[400px] min-w-72 snap-center bg-gray-100 rounded-3xl'>1</div>
+            <div className='h-[400px] min-w-72 snap-center bg-gray-100 rounded-3xl'>1</div>
 
         </div>
         </div>
