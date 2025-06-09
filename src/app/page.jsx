@@ -18,7 +18,7 @@ function page(props) {
     <div>
       <div className='w-full bg-gradient-to-r from-yellow-300 from-28% via-pink-700 via-70% to-purple-800 sm:bg-gradient-to-r rounded-3xl flex flex-col justify-center  items-center  '>
         <>
-            <nav className=' flex flex-row justify-center  lg:items-center items-start w-full mb-32  text-sm font-medium border border-r-0 border-l-0 border-slate-500 mt-16 '>
+            <nav className=' flex flex-row justify-center  lg:items-center items-start w-full lg:mb-32 text-sm font-medium border border-r-0 border-l-0 border-slate-500 mt-16 '>
               <div className='flex lg:flex-row flex-col lg:items-center justify-between max-w-[1240px] w-full pl-8 pr-8 p-4  '>
                 <div className='flex flex-row justify-between max-w-[1240px] w-full lg:items-center'>
                   <div className='text-3xl font-bold'>
@@ -95,11 +95,11 @@ function page(props) {
         </div>
       </section>
 
-      <section className='max-w-7xl mx-auto mt-32 p-6'>
+      <section className='max-w-7xl mx-auto mt-24 p-6'>
         <Text className="!text-sm ">Sales</Text>
-        <p className='text-6xl font-semibold max-w-3xl'>Know more about your customers than they do.</p>
+        <p className='lg:text-6xl text-3xl font-semibold max-w-3xl'>Know more about your customers than they do.</p>
 
-        <div className='grid lg:grid-cols-6 grid-rows-2 gap-4 mt-10 '>
+        <div className='grid lg:grid-cols-6 grid-rows-2 gap-4 mt-16 '>
           <GridCard ClassName='col-span-3 lg:rounded-tl-3xl ' supTitle="Insight" title="Get perfect clarity" description="Radiant uses social engineering to build a detailed financial picture of your leads. Know their budget, compensation package, social security number, and more." image={"/images/app.png"} />
           <GridCard ClassName='col-span-3 lg:rounded-tr-3xl' supTitle="Analysis" title="Undercut your competitors" description="With our advanced data mining, you’ll know which companies your leads are talking to and exactly how much they’re being charged." image={"/images/app.png"} />
           <GridCard ClassName='lg:col-span-2 col-span-3 lg:rounded-bl-3xl' rounded='lg:rounded-bl-3xl' supTitle="Speed" title="Built for power users" description="It’s never been faster to cold email your entire contact list using our streamlined keyboard shortcuts." image={"/images/app.png"} />
@@ -111,7 +111,7 @@ function page(props) {
 
 
       <section className='h-full w-full bg-violet-1000 rounded-3xl mt-32  flex flex-row justify-center p-6'>
-        <div className='max-w-[1240px] h-full w-full pt-32 pb-32'>
+        <div className='max-w-[1240px] h-full w-full pt-24 pb-32'>
 
 
           <Text className="!text-sm text-gray-700">Outreach</Text>

@@ -7,11 +7,6 @@ function GridCard2({ClassName, supTitle, title, description, image, rounded}) {
 
     return image && (
         <div className={` rounded-xl h-[500px] ${ClassName} bg-cover flex flex-col border border-gray-1000`}>
-        {/* <div className={` rounded-xl h-[500px] ${ClassName} bg-cover flex justify-bottom items-end border border-gray-800`}
-         style={{ backgroundImage: `url(${image})` }}
-         >
-           
-        </div> */}
         <div className='h-[60%] w-full'>
         <Image src={image} alt="" width={500} height={500} className='h-full w-full'/>
         </div>

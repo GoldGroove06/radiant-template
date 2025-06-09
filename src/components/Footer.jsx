@@ -16,9 +16,9 @@ function Footer(props) {
                 <div className='flex flex-col items-center justify-center mb-16 space-y-8'>
                     <Text className="!text-sm ">Get started</Text>
                     <div className='flex flex-col items-center justify-center'>
-                        <p className="text-5xl font-bold text-slate-1000">Ready to dive in?
+                        <p className="lg:text-5xl text-3xl font-bold text-slate-1000">Ready to dive in?
                         </p>
-                        <p className="text-5xl font-bold text-slate-1000">Start your free trial today.
+                        <p className="lg:text-5xl text-3xl font-bold text-slate-1000">Start your free trial today.
                         </p>
                     </div>
                     <div className='flex flex-col items-center justify-center'>
@@ -30,11 +30,11 @@ function Footer(props) {
                     </Button>
 
                 </div>
-                <section className='border border-slate-500 justify-center items-center flex flex-col lg:h-72 pl-12 pr-12 pt-8'>
+                <section className='border border-slate-500 justify-center items-center flex flex-col lg:h-72 lg:pl-12 lg:pr-12 pt-10 p-4'>
                     <div className=' flex justify-between items-start lg:items-center lg:flex-row flex-col flex-wrap  max-w-[1240px] w-full space-y-8 lg:space-y-0'>
                         <div className='h-full'>Radiant</div>
 
-                        <div className='grid grid-cols-4 lg:grid-rows-1 grid-rows-2 w-full lg:max-w-[700px] text-sm font-medium'>
+                        <div className='grid grid-cols-4 lg:grid-rows-1 grid-rows-2 w-full lg:max-w-[800px] text-sm font-medium'>
                             <div className='flex flex-col space-y-6 lg:col-span-1 col-span-2'>
                                 <div className='text-gray-900 font-medium'>Product</div>
                                 <div>Pricing</div>
