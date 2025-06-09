@@ -26,10 +26,10 @@ function page(props) {
                   </div>
 
                   <div className={` flex hidden lg:block lg:flex-row flex-col  text-slate-1000 bg-tranparent  `}>
-                    <Link href="/pricing" className='hover:bg-black hover:bg-opacity-10  p-4'>Pricing</Link>
-                    <Link href="/company" className='hover:bg-black hover:bg-opacity-10  p-4'>Company</Link>
-                    <Link href="/blog" className='hover:bg-black hover:bg-opacity-10  p-4'>Blog</Link>
-                    <Link href="/login" className='hover:bg-black hover:bg-opacity-10  p-4'>Login</Link>
+                    <Link href="/pricing" className='hover:bg-black hover:bg-opacity-5  p-4'>Pricing</Link>
+                    <Link href="/company" className='hover:bg-black hover:bg-opacity-5  p-4'>Company</Link>
+                    <Link href="/blog" className='hover:bg-black hover:bg-opacity-5  p-4'>Blog</Link>
+                    <Link href="/login" className='hover:bg-black hover:bg-opacity-5  p-4'>Login</Link>
                   </div>
                   <div className='lg:hidden block'>
                     <button className={``}
@@ -60,15 +60,15 @@ function page(props) {
           </>
         <div className='max-w-[1240px] flex flex-col items-start justify-center pt-16 lg:pb-48 pb-28 space-y-8  w-full lg:pl-8 p-4 lg:p-0'>
           
-          <p className="lg:text-9xl text-6xl font-semibold">Close every deal.</p>
-          <Text className="!text-2xl max-w-lg tracking-tighter">
+          <h1 className="lg:text-9xl text-6xl font-semibold tracking-tighter">Close every deal.</h1>
+          <Text className="!text-2xl max-w-lg tracking-tighter font-medium text-zinc-500">
             Radiant helps you sell more by revealing sensitive information about your customers.
           </Text>
           <div className=' w-full md:space-x-4 space-y-4 md:space-y-0 pt-8 font-medium'>
             <Button className="!bg-gray-1000 !text-slate-100 !rounded-3xl w-full !p-4 !pt-5 !pb-5 w-full md:w-32">
               Get Started
             </Button>
-            <Button className="!bg-white/20 backdrop-blur-md border border-white/50 shadow-slate-800 shadow-lg opacity-90 !text-gray-1000 !rounded-3xl !p-4 !pt-5 !pb-5 w-full md:w-32">
+            <Button className="!bg-white/20 backdrop-blur-md border border-white/50 shadow-gray-800/50 shadow-md opacity-90 !text-gray-1000 !rounded-3xl !p-4 !pt-5 !pb-5 w-full md:w-32">
               See pricing
             </Button>
             {/* <Button customRootClass="landing-button" className="bg-white/20 backdrop-blur-md border border-white/50 shadow-lgbg-slate-800 opacity-90 text-gray-1000 rounded-3xl p-4 !pt-5 pb-5 w-full lg:w-28">
@@ -89,15 +89,15 @@ function page(props) {
 
 
       <section className='lg:max-w-[1240px] lg:mx-auto flex flex-col mt-16 p-6 overflow-hidden'>
-        <p className='lg:text-6xl text-4xl font-semibold max-w-3xl'>A snapshot of your entire sales pipeline.</p>
+        <p className='lg:text-6xl text-4xl font-semibold max-w-3xl tracking-tighter'>A snapshot of your entire sales pipeline.</p>
         <div className='p-2 bg-slate-100 border border-gray-300 rounded-2xl mt-12 lg:w-full w-[200%] backdrop-blur-sm shadow-lg'>
           <Image src="/images/app.png" alt="" height={500} width={1240} className='rounded-2xl border border-gray-400 ' />
         </div>
       </section>
 
       <section className='max-w-7xl mx-auto mt-24 p-6'>
-        <Text className="!text-sm ">Sales</Text>
-        <p className='lg:text-6xl text-3xl font-semibold max-w-3xl'>Know more about your customers than they do.</p>
+        <Text className="!text-xs !tracking-widest mb-2">SALES</Text>
+        <p className='lg:text-6xl text-3xl font-semibold max-w-3xl tracking-tighter'>Know more about your customers than they do.</p>
 
         <div className='grid lg:grid-cols-6 grid-rows-2 gap-4 mt-16 '>
           <GridCard ClassName='col-span-3 lg:rounded-tl-3xl ' supTitle="Insight" title="Get perfect clarity" description="Radiant uses social engineering to build a detailed financial picture of your leads. Know their budget, compensation package, social security number, and more." image={"/images/app.png"} />
@@ -114,8 +114,8 @@ function page(props) {
         <div className='max-w-[1240px] h-full w-full pt-24 pb-32'>
 
 
-          <Text className="!text-sm text-gray-700">Outreach</Text>
-          <p className="text-6xl font-semibold text-slate-100 max-w-4xl mb-16">Customer outreach has never been easier.</p>
+          <Text className="!text-xs !tracking-widest mb-2 text-gray-700">OUTREACH</Text>
+          <p className="text-6xl font-semibold text-slate-100 max-w-4xl mb-16 tracking-tighter">Customer outreach has never been easier.</p>
           <div className='grid lg:grid-cols-6 grid-rows-2 gap-4 mt-8'>
             <GridCard2 ClassName='col-span-4 lg:rounded-tl-3xl' supTitle="Networking" title="Sell at the speed of light" description="Our RadiantAI chat assistants analyze the sentiment of your conversations in real time, ensuring you're always one step ahead." image={"/images/networking.png"} />
             <GridCard2 ClassName='lg:col-span-2 col-span-4 lg:rounded-tr-3xl' supTitle="Integrations" title="Meet leads where they are" description="With thousands of integrations, no one will be able to escape your cold outreach." image={"/images/engagement.png"} />
@@ -128,8 +128,8 @@ function page(props) {
 
       <section className='h-full w-full flex flex-col items-center justify-center mt-32 p-6 mb-32'>
         <div className='max-w-[1240px] h-full w-full '>
-          <Text className="!text-sm !text-gray-900">What everyone is saying</Text>
-          <p className="text-6xl font-semibold max-w-2xl">Trusted by professionals.</p>
+          <Text className="!text-xs !tracking-widest mb-2 !text-gray-900">WHAT EVERYONE IS SAYING</Text>
+          <p className="text-6xl font-semibold max-w-2xl tracking-tighter">Trusted by professionals.</p>
         </div>
         <div className='flex flex-row items-start justify-start   snap-x w-full overflow-x-scroll mt-8'>
           <div className='flex flex-row space-x-12 p-8 lg:min-w-[200%] min-w-[400%] snap-center'>

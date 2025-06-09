@@ -13,12 +13,12 @@ function Footer(props) {
     return (
         <div className='bg-gradient-to-r from-yellow-300 from-28% via-pink-700 via-70% to-purple-800 sm:bg-gradient-to-r flex flex-col items-center justify-center p-2'>
             <div className='bg-white/80 backdrop-blur-md border border-white/50 shadow-lgbg-slate-800 opacity-90 h-full w-full rounded-3xl flex flex-col justify-between pt-24 pb-16 justify-center'>
-                <div className='flex flex-col items-center justify-center mb-16 space-y-8'>
-                    <Text className="!text-sm ">Get started</Text>
+                <div className='flex flex-col items-center justify-center mb-32 space-y-6'>
+                    <Text className="!text-[0.65rem] !font-semibold !tracking-widest">GET  STARTED</Text>
                     <div className='flex flex-col items-center justify-center'>
-                        <p className="lg:text-5xl text-3xl font-bold text-slate-1000">Ready to dive in?
+                        <p className="lg:text-5xl text-3xl font-semibold text-gray-1000 tracking-tight">Ready to dive in?
                         </p>
-                        <p className="lg:text-5xl text-3xl font-bold text-slate-1000">Start your free trial today.
+                        <p className="lg:text-5xl text-3xl font-semibold  tracking-tight text-gray-1000">Start your free trial today.
                         </p>
                     </div>
                     <div className='flex flex-col items-center justify-center'>
