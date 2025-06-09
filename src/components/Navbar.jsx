@@ -21,7 +21,7 @@ function Navbar() {
 
     return (
         <>
-        <nav className=' flex flex-row justify-center  lg:items-center items-start w-full mt-16'>
+        <nav className=' flex flex-row justify-center  lg:items-center items-start w-full mt-16 border border-slate-500 p-2 text-sm font-medium'>
             <div className='flex lg:flex-row flex-col lg:items-center justify-between max-w-[1240px] w-full pl-8 pr-8   '>
           <div className='flex flex-row justify-between max-w-[1240px] w-full lg:items-center'>  
         <div className='text-3xl font-bold'>

@@ -16,21 +16,20 @@ function page(props) {
   const [isOpen, setIsOpen] = useState(false);
   return (
     <div>
-      <div className='w-full bg-gradient-to-r from-yellow-300 from-28% via-pink-700 via-70% to-purple-800 sm:bg-gradient-to-r rounded-3xl flex flex-row justify-center lg:items-start items-center space-y-4 lg:pl-8 p-4 lg:p-0'>
-        <div className='max-w-[1240px] flex flex-col items-start justify-center pt-16 lg:pb-48 pb-28 space-y-8  w-full'>
-          <>
-            <nav className=' flex flex-row justify-center  lg:items-center items-start w-full mb-48'>
-              <div className='flex lg:flex-row flex-col lg:items-center justify-between max-w-[1240px] w-full pl-8 pr-8   '>
+      <div className='w-full bg-gradient-to-r from-yellow-300 from-28% via-pink-700 via-70% to-purple-800 sm:bg-gradient-to-r rounded-3xl flex flex-col justify-center  items-center  '>
+        <>
+            <nav className=' flex flex-row justify-center  lg:items-center items-start w-full mb-32  text-sm font-medium border border-r-0 border-l-0 border-slate-500 mt-16 '>
+              <div className='flex lg:flex-row flex-col lg:items-center justify-between max-w-[1240px] w-full pl-8 pr-8 p-4  '>
                 <div className='flex flex-row justify-between max-w-[1240px] w-full lg:items-center'>
                   <div className='text-3xl font-bold'>
                     Radiant
                   </div>
 
-                  <div className={` flex hidden lg:block lg:flex-row flex-col space-x-6  text-slate-1000 bg-tranparent  `}>
-                    <Link href="/pricing" className={`hover:text-teal-900 pb-3 `}>Pricing</Link>
-                    <Link href="/company" className={`hover:text-teal-900 pb-3 `}>Company</Link>
-                    <Link href="/blog" className={`hover:text-teal-900 pb-3 `}>Blog</Link>
-                    <Link href="/login" className={` pb-3 `}>Login</Link>
+                  <div className={` flex hidden lg:block lg:flex-row flex-col  text-slate-1000 bg-tranparent  `}>
+                    <Link href="/pricing" className='hover:bg-black hover:bg-opacity-10  p-4'>Pricing</Link>
+                    <Link href="/company" className='hover:bg-black hover:bg-opacity-10  p-4'>Company</Link>
+                    <Link href="/blog" className='hover:bg-black hover:bg-opacity-10  p-4'>Blog</Link>
+                    <Link href="/login" className='hover:bg-black hover:bg-opacity-10  p-4'>Login</Link>
                   </div>
                   <div className='lg:hidden block'>
                     <button className={``}
@@ -59,15 +58,17 @@ function page(props) {
 
             </nav>
           </>
+        <div className='max-w-[1240px] flex flex-col items-start justify-center pt-16 lg:pb-48 pb-28 space-y-8  w-full lg:pl-8 p-4 lg:p-0'>
+          
           <p className="lg:text-9xl text-6xl font-semibold">Close every deal.</p>
-          <Text className="!text-2xl max-w-lg">
+          <Text className="!text-2xl max-w-lg tracking-tighter">
             Radiant helps you sell more by revealing sensitive information about your customers.
           </Text>
-          <div className=' w-full md:space-x-4 space-y-4 md:space-y-0'>
-            <Button className="!bg-gray-1000 !text-slate-100 !rounded-3xl !p-4 !pt-5 !pb-5 w-full md:w-28">
+          <div className=' w-full md:space-x-4 space-y-4 md:space-y-0 pt-8 font-medium'>
+            <Button className="!bg-gray-1000 !text-slate-100 !rounded-3xl w-full !p-4 !pt-5 !pb-5 w-full md:w-32">
               Get Started
             </Button>
-            <Button className="!bg-white/20 backdrop-blur-md border border-white/50 shadow-lgbg-slate-800 opacity-90 !text-gray-1000 !rounded-3xl !p-4 !pt-5 !pb-5 w-full md:w-32">
+            <Button className="!bg-white/20 backdrop-blur-md border border-white/50 shadow-slate-800 shadow-lg opacity-90 !text-gray-1000 !rounded-3xl !p-4 !pt-5 !pb-5 w-full md:w-32">
               See pricing
             </Button>
             {/* <Button customRootClass="landing-button" className="bg-white/20 backdrop-blur-md border border-white/50 shadow-lgbg-slate-800 opacity-90 text-gray-1000 rounded-3xl p-4 !pt-5 pb-5 w-full lg:w-28">
@@ -100,10 +101,10 @@ function page(props) {
 
         <div className='grid lg:grid-cols-6 grid-rows-2 gap-4 mt-10 '>
           <GridCard ClassName='col-span-3 lg:rounded-tl-3xl ' supTitle="Insight" title="Get perfect clarity" description="Radiant uses social engineering to build a detailed financial picture of your leads. Know their budget, compensation package, social security number, and more." image={"/images/app.png"} />
-          <GridCard ClassName='col-span-3 lg:rounded-tr-3xl' supTitle="Sales" title="Sales" description="Sales" image={"/images/app.png"} />
-          <GridCard ClassName='lg:col-span-2 col-span-3 lg:rounded-bl-3xl' rounded='lg:rounded-bl-3xl' supTitle="Sales" title="Sales" description="Sales" image={"/images/app.png"} />
-          <GridCard ClassName='lg:col-span-2 col-span-3' supTitle="Sales" title="Sales" description="Sales" image={"/images/app.png"} />
-          <GridCard ClassName='lg:col-span-2 col-span-3 lg:rounded-br-3xl' rounded='lg:rounded-br-3xl' supTitle="Sales" title="Sales" description="Sales" image={"/images/app.png"} />
+          <GridCard ClassName='col-span-3 lg:rounded-tr-3xl' supTitle="Analysis" title="Undercut your competitors" description="With our advanced data mining, you’ll know which companies your leads are talking to and exactly how much they’re being charged." image={"/images/app.png"} />
+          <GridCard ClassName='lg:col-span-2 col-span-3 lg:rounded-bl-3xl' rounded='lg:rounded-bl-3xl' supTitle="Speed" title="Built for power users" description="It’s never been faster to cold email your entire contact list using our streamlined keyboard shortcuts." image={"/images/app.png"} />
+          <GridCard ClassName='lg:col-span-2 col-span-3' supTitle="Source" title="Get the furthest reach" description="Bypass those inconvenient privacy laws to source leads from the most unexpected places." image={"/images/app.png"} />
+          <GridCard ClassName='lg:col-span-2 col-span-3 lg:rounded-br-3xl' rounded='lg:rounded-br-3xl' supTitle="Limitless" title="Sell globally" description="Radiant helps you sell in locations currently under international embargo." image={"/images/app.png"} />
 
         </div>
       </section>
@@ -116,10 +117,10 @@ function page(props) {
           <Text className="!text-sm text-gray-700">Outreach</Text>
           <p className="text-6xl font-semibold text-slate-100 max-w-4xl mb-16">Customer outreach has never been easier.</p>
           <div className='grid lg:grid-cols-6 grid-rows-2 gap-4 mt-8'>
-            <GridCard2 ClassName='col-span-4 lg:rounded-tl-3xl' supTitle="Networking" title="Sell at the speed of light" description="Our RadiantAI chat assistants analyze the sentiment of your conversations in real time, ensuring you're always one step ahead." image={"/images/app.png"} />
-            <GridCard2 ClassName='lg:col-span-2 col-span-4 lg:rounded-tr-3xl' supTitle="Integrations" title="Meet leads where they are" description="With thousands of integrations, no one will be able to escape your cold outreach." image={"/images/app.png"} />
-            <GridCard2 ClassName='lg:col-span-2 col-span-4 lg:rounded-bl-3xl' rounded='lg:rounded-bl-3xl' supTitle="Meetings" title="Smart call scheduling" description="Automatically insert intro calls into your leads' calendars without their consent." image={"/images/app.png"} />
-            <GridCard2 ClassName='col-span-4 lg:rounded-br-3xl' rounded='lg:rounded-br-3xl' supTitle="Engagement" title="Become a thought leader" description="RadiantAI automatically writes LinkedIn posts that relate current events to B2B sales, helping you build a reputation as a thought leader." image={"/images/app.png"} />
+            <GridCard2 ClassName='col-span-4 lg:rounded-tl-3xl' supTitle="Networking" title="Sell at the speed of light" description="Our RadiantAI chat assistants analyze the sentiment of your conversations in real time, ensuring you're always one step ahead." image={"/images/networking.png"} />
+            <GridCard2 ClassName='lg:col-span-2 col-span-4 lg:rounded-tr-3xl' supTitle="Integrations" title="Meet leads where they are" description="With thousands of integrations, no one will be able to escape your cold outreach." image={"/images/engagement.png"} />
+            <GridCard2 ClassName='lg:col-span-2 col-span-4 lg:rounded-bl-3xl' rounded='lg:rounded-bl-3xl' supTitle="Meetings" title="Smart call scheduling" description="Automatically insert intro calls into your leads' calendars without their consent." image={"/images/engagement.png"} />
+            <GridCard2 ClassName='col-span-4 lg:rounded-br-3xl' rounded='lg:rounded-br-3xl' supTitle="Engagement" title="Become a thought leader" description="RadiantAI automatically writes LinkedIn posts that relate current events to B2B sales, helping you build a reputation as a thought leader." image={"/images/networking.png"} />
 
           </div>
         </div>
@@ -131,7 +132,7 @@ function page(props) {
           <p className="text-6xl font-semibold max-w-2xl">Trusted by professionals.</p>
         </div>
         <div className='flex flex-row items-start justify-start   snap-x w-full overflow-x-scroll mt-8'>
-          <div className='flex flex-row space-x-12 p-8 min-w-[200%] snap-center'>
+          <div className='flex flex-row space-x-12 p-8 lg:min-w-[200%] min-w-[400%] snap-center'>
             <ImageCard content="Thanks to Radiant, we’re finding new leads that we never would have found with legal methods." />
             <ImageCard content="Thanks to Radiant, we’re finding new leads that we never would have found with legal methods." />
             <ImageCard content="Thanks to Radiant, we’re finding new leads that we never would have found with legal methods." />
@@ -142,8 +143,8 @@ function page(props) {
           </div>
         </div>
         <div className='flex flex-col max-w-[1240px] items-start h-full w-full space-y-4 mt-8'>
-          <Text className="!text-md max-w-md">Join the best sellers in the business and start using Radiant to hit your targets today.</Text>
-          <Button className="!p-0 !text-md">Get started</Button>
+          <Text className="!text-sm max-w-sm">Join the best sellers in the business and start using Radiant to hit your targets today.</Text>
+          <Button className="!p-0 !text-sm font-medium !text-pink-800">Get started</Button>
         </div>
       </section>
     </div>
