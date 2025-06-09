@@ -18,21 +18,43 @@ function page(props) {
     <div>
       <div className='w-full bg-gradient-to-r from-yellow-300 from-28% via-pink-700 via-70% to-purple-800 sm:bg-gradient-to-r rounded-3xl flex flex-col justify-center  items-center  '>
         <>
-            <nav className=' flex flex-row justify-center  lg:items-center items-start w-full lg:mb-32 text-sm font-medium border border-r-0 border-l-0 border-slate-500 mt-16 '>
-              <div className='flex lg:flex-row flex-col lg:items-center justify-between max-w-[1240px] w-full pl-8 pr-8 p-4  '>
-                <div className='flex flex-row justify-between max-w-[1240px] w-full lg:items-center'>
+            <nav className=' flex flex-row justify-center  lg:items-center items-start w-full lg:mb-32 text-sm font-medium border border-r-0 border-l-0 border-black/5 mt-16 pt-2 pb-2'>
+              <div className='flex flex-row justify-center  lg:items-center items-start w-full  text-sm font-medium border border-r-0 border-l-0 border-black/5'>
+              <div className='flex lg:flex-row flex-col lg:items-center justify-between max-w-[1240px] w-full pl-8 pr-8 p-3  '>
+                
+              
+                <div className='flex flex-row justify-between max-w-[1240px] w-full lg:items-center relative'>
+                  <svg viewBox="0 0 15 15" className='w-4 h-4 absolute -top-5 -left-2 fill-black/10' aria-hidden="true" ><path d="M8 0H7V7H0V8H7V15H8V8H15V7H8V0Z"></path></svg>
+                <svg viewBox="0 0 15 15" className='w-4 h-4 lg:block hidden absolute -top-5 -right-1 fill-black/10' aria-hidden="true" ><path d="M8 0H7V7H0V8H7V15H8V8H15V7H8V0Z"></path></svg>
+                <svg viewBox="0 0 15 15" className='w-4 h-4   absolute top-10 -left-2 fill-black/10' aria-hidden="true" ><path d="M8 0H7V7H0V8H7V15H8V8H15V7H8V0Z"></path></svg>
+                <svg viewBox="0 0 15 15" className='w-4 h-4 lg:block hidden absolute top-10 -right-1 fill-black/10' aria-hidden="true" ><path d="M8 0H7V7H0V8H7V15H8V8H15V7H8V0Z"></path></svg>
+                
+                <svg viewBox="0 0 15 15" className='w-4 h-4 absolute top-10 left-[7rem] fill-black/10' aria-hidden="true" ><path d="M8 0H7V7H0V8H7V15H8V8H15V7H8V0Z"></path></svg>
+               
+                <svg viewBox="0 0 15 15" className='w-4 h-4 absolute -top-5 left-[7rem] fill-black/10' aria-hidden="true" ><path d="M8 0H7V7H0V8H7V15H8V8H15V7H8V0Z"></path></svg>
+                <svg viewBox="0 0 15 15" className='w-4 h-4 lg:block hidden absolute -top-5 right-[7.4rem] fill-black/10' aria-hidden="true" ><path d="M8 0H7V7H0V8H7V15H8V8H15V7H8V0Z"></path></svg>
+                <svg viewBox="0 0 15 15" className='w-4 h-4 lg:block hidden absolute top-10 right-[7.4rem] fill-black/10' aria-hidden="true" ><path d="M8 0H7V7H0V8H7V15H8V8H15V7H8V0Z"></path></svg>
+              
+                <svg viewBox="0 0 15 15" className='w-4 h-4 lg:block hidden absolute top-10 right-[3.7rem] fill-black/10' aria-hidden="true" ><path d="M8 0H7V7H0V8H7V15H8V8H15V7H8V0Z"></path></svg>
+                <svg viewBox="0 0 15 15" className='w-4 h-4 lg:block hidden absolute -top-5 right-[3.7rem] fill-black/10' aria-hidden="true" ><path d="M8 0H7V7H0V8H7V15H8V8H15V7H8V0Z"></path></svg>
+                <svg viewBox="0 0 15 15" className='w-4 h-4 lg:block hidden absolute top-10 right-[13.4rem] fill-black/10' aria-hidden="true" ><path d="M8 0H7V7H0V8H7V15H8V8H15V7H8V0Z"></path></svg>
+                <svg viewBox="0 0 15 15" className='w-4 h-4 lg:block hidden absolute -top-5 right-[13.4rem] fill-black/10' aria-hidden="true" ><path d="M8 0H7V7H0V8H7V15H8V8H15V7H8V0Z"></path></svg>
+                <svg viewBox="0 0 15 15" className='w-4 h-4 lg:block hidden absolute top-10 right-[18rem] fill-black/10' aria-hidden="true" ><path d="M8 0H7V7H0V8H7V15H8V8H15V7H8V0Z"></path></svg>
+                <svg viewBox="0 0 15 15" className='w-4 h-4 lg:block hidden absolute -top-5 right-[18rem] fill-black/10' aria-hidden="true" ><path d="M8 0H7V7H0V8H7V15H8V8H15V7H8V0Z"></path></svg>
+
+                
                   <div className='text-3xl font-bold'>
                     Radiant
                   </div>
 
                   <div className={` flex hidden lg:block lg:flex-row flex-col  text-slate-1000 bg-tranparent  `}>
-                    <Link href="/pricing" className='hover:bg-black hover:bg-opacity-5  p-4'>Pricing</Link>
-                    <Link href="/company" className='hover:bg-black hover:bg-opacity-5  p-4'>Company</Link>
-                    <Link href="/blog" className='hover:bg-black hover:bg-opacity-5  p-4'>Blog</Link>
-                    <Link href="/login" className='hover:bg-black hover:bg-opacity-5  p-4'>Login</Link>
+                    <Link href="/pricing" className='hover:bg-black hover:bg-opacity-5  p-4 pt-5 pb-5'>Pricing</Link>
+                    <Link href="/company" className='hover:bg-black hover:bg-opacity-5  p-4 pt-5 pb-5'>Company</Link>
+                    <Link href="/blog" className='hover:bg-black hover:bg-opacity-5  p-4 pt-5 pb-5'>Blog</Link>
+                    <Link href="/login" className='hover:bg-black hover:bg-opacity-5  p-4 pt-5 pb-5'>Login</Link>
                   </div>
-                  <div className='lg:hidden block'>
-                    <button className={``}
+                  <div className='lg:hidden block flex justify-center items-center'>
+                    <button className={`hover:bg-black hover:bg-opacity-5 rounded-2xl`}
                       onClick={() => setIsOpen(!isOpen)}
                     >
                       open
@@ -55,7 +77,7 @@ function page(props) {
 
 
               </div>
-
+</div>
             </nav>
           </>
         <div className='max-w-[1240px] flex flex-col items-start justify-center pt-16 lg:pb-48 pb-28 space-y-8  w-full lg:pl-8 p-4 lg:p-0'>
